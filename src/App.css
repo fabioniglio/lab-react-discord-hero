@@ -1,56 +1,37 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 .App {
   padding-top: 60px; /* Adjust so the content starts below the navbar */
+  width: 60%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align items to the left */
+  width: 40%;
+  height: 90%;
+  color: rgba(255, 255, 255, 0.87);
+  text-align: left; /* Ensure text within is aligned to the left */
+  position: fixed;
+  top: 10rem;
 }
 
 .heading {
   font-family: "Poppins", sans-serif;
+
+  font-size: 5rem;
+  text-align: left; /* Align text to the left */
 }
 
 .paragraph {
   font-family: "Roboto", sans-serif;
+  text-align: left; /* Align text to the left */
 }
 
 .navbar {
@@ -60,10 +41,10 @@
   overflow: hidden;
   height: 50px;
   line-height: 50px;
-  position: fixed; /* Fixes the navbar at the top of the screen */
-  top: 0; /* Aligns the navbar at the top edge of the viewport */
-  left: 0; /* Aligns the navbar at the left edge of the viewport */
-  right: 0; /* Ensures the navbar extends to the right edge */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000; /* Keeps the navbar on top of other content */
 }
 
@@ -85,4 +66,20 @@
   height: 30px; /* Adjust based on your preference */
   width: auto;
   padding-top: 10px;
+}
+
+.buttonMac {
+  background-color: white;
+  color: black;
+  border-radius: 28px;
+  padding: 16px 32px;
+  margin-top: 2rem;
+}
+
+.buttonBrowser {
+  background-color: #23272a;
+  color: white;
+  border-radius: 28px;
+  padding: 16px 32px;
+  margin-top: 2rem;
 }
