@@ -1,5 +1,6 @@
 import "./App.css";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import discordLogo from "./assets/discord-logo-white.png";
 import menuIcon from "./assets/menu-icon.png";
@@ -29,6 +30,7 @@ function App() {
         <button className="buttonMac">Download for Mac</button>
         <button className="buttonBrowser">Open Discord in your browser</button>
       </div>
+      <Footer />
     </div>
   );
 }
